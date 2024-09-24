@@ -1,4 +1,4 @@
-import { SiTwitter, SiGithub, SiInstagram } from "react-icons/si";
+import { SiWhatsapp, SiGithub, SiTelegram } from "react-icons/si";
 import { FiLinkedin } from "react-icons/fi";
 
 function Footer() {
@@ -9,28 +9,28 @@ function Footer() {
       <div className="bg-indigo-600 dark:bg-indigo-900">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-gray-50 text-sm text-center sm:text-left">
-            © {year} Bits-Of-C0de —
+            © {year} Blog —
             <a
-              href="https://twitter.com/soumyajit4419"
+              href="https://linkedin.com/in/alielesawy"
               rel="noopener noreferrer"
               className="text-gray-50 ml-1"
               target="_blank"
             >
-              @Soumyajit
+              @ Ali Esmail
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a
               className="text-gray-50"
-              href="https://twitter.com/soumyajit4419"
+              href="https://api.whatsapp.com/send/?phone=%2B201555344220&text&type=phone_number&app_absent=0"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <SiTwitter />
+              <SiWhatsapp />
             </a>
             <a
               className="ml-4 text-gray-50"
-              href="https://github.com/soumyajit4419"
+              href="https://github.com/alielesawy"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -38,15 +38,15 @@ function Footer() {
             </a>
             <a
               className="ml-4 text-gray-50"
-              href="https://www.instagram.com/soumyajit4419/"
+              href="https://t.me/alielesawy"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <SiInstagram />
+              <SiTelegram />
             </a>
             <a
               className="ml-4 text-gray-50"
-              href="https://www.linkedin.com/in/soumyajit4419/"
+              href="https://www.linkedin.com/in/alielesawy/"
               rel="noopener noreferrer"
               target="_blank"
             >
