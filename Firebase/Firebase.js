@@ -1,9 +1,9 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
+// Firebase.js
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration
+// Your Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBp6IH5_6t53t_T33KjDfkVlSqcjvKx1EY",
   authDomain: "blog-3f535.firebaseapp.com",
@@ -11,14 +11,13 @@ const firebaseConfig = {
   storageBucket: "blog-3f535.appspot.com",
   messagingSenderId: "1016320684531",
   appId: "1:1016320684531:web:ced30703abe37735806286",
-  measurementId: "G-3321LVVG6Z"
+  measurementId: "G-3321LVVG6Z",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+const db = getFirestore(app);
 
-// Initialize Firestore and Auth
-const db = getFirestore(app);  // Correct way to initialize Firestore
-const auth = getAuth(app);     // Correct way to initialize Auth
-
-export { db, auth };
+export { auth, provider ,db};
