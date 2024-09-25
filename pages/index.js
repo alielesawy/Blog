@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import BlogHeader from "../Components/BlogHeader";
 import { getAllBlogPosts, getAllTopics } from "../Lib/Data";
+require('dotenv').config();
 
 export const getStaticProps = () => {
   const allBlogs = getAllBlogPosts();
